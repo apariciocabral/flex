@@ -1,30 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
-        crossorigin="anonymous"
-    >
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/68103827f9.js" crossorigin="anonymous"></script>
-    <title>Carrinho de Compras</title>
-</head>
-<body>
-    <header class="d-none d-sm-block">
-        <div class="header p-2">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a 
-                        class="flex-fill" 
-                        href="carangos-top-flex.html"
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link 
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" 
+            rel="stylesheet" 
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" 
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/68103827f9.js" crossorigin="anonymous"></script>
+        <title>Carrinho de Compras</title>
+    </head>
+    <body>
+        <header class="d-none d-sm-block">
+            <div class="header p-2">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a 
+                            class="flex-fill" 
+                            href="carangos-top-flex.html"
+                        >
+                            <img src="logo.png" width="120px" height="70px">
+                        </a> 
+                        <form class="d-flex flex-fill" action="produtos-flex.html">
+                            <input
+                                type="search"
+                                id="h_search-input" 
+                                class="src-input form-control" 
+                                placeholder="Busque aqui seu produto"
+                                aria-label="Recipient's username"
+                            >
+                            <button type="button" class="btn">
+                                <a href="produtos-flex.html">
+                                    <i class="fas fa-search fa-lg"></i>
+                                </a>
+                            </button>
+                        </form>
+                        <div class="flex-fill text-end">
+                            <a class=" text-decoration-none" href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram fa-fw fa-2x text-primary"></i>
+                            </a>
+                            <a class=" text-decoration-none" href="https://www.facebook.com" target="_blank"> 
+                                <i class="fab fa-facebook-square fa-fw fa-2x text-primary"></i>
+                            </a>
+                            <a class=" text-decoration-none" href="login-flex.html">
+                                <i class="far fa-user-circle fa-fw fa-2x text-primary"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-2 py-3 d-none d-sm-flex">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <ul class="list-unstyled list-inline m-0 d-none d-sm-flex">
+                            <li class="list-inline-item pe-3"> 
+                                <a 
+                                    class="text-decoration-none link-light fw-bold" 
+                                    href="carangos-top-flex.html"
+                                >
+                                    Inicial
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a 
+                                    class="text-decoration-none link-light fw-bold" 
+                                    href="produtos-flex.html"
+                                >
+                                    Produtos
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a 
+                                    class="text-decoration-none link-light fw-bold" 
+                                    href="quem-somos-flex.html"
+                                >
+                                    Quem Somos
+                                </a>
+                            </li>
+                            <li class="list-inline-item px-3">
+                                <a 
+                                    class="text-decoration-none link-light fw-bold" 
+                                    href="fale-conosco-flex.html"
+                                >
+                                    Fale Conosco 
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-none d-lg-flex">
+                            <a 
+                                class="text-decoration-none link-warning fw-bold"
+                                href="https://exame.com/negocios/de-bmw-a-porsche-marcas-de-luxo-batem-recordes-de-venda-no-brasil-em-2021/" 
+                                target="_blank" 
+                            >
+                            Veja mais em nossos parceiros
+                            </a>
+                        </div>
+                        <div>
+                            <a 
+                                class="text-decoration-none link-light" 
+                                href="carrinho-de-compras-flex.html"
+                            >
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <header class="d-flex d-sm-none">
+            <div class="header-2 p-2 container">
+                <div class="d-flex align-items-center">
+                    <button 
+                        class="btn" 
+                        type="button" 
+                        data-bs-toggle="offcanvas" 
+                        data-bs-target="#offcanvasExample" 
+                        aria-controls="offcanvasExample"
                     >
-                        <img src="logo.png" width="120px" height="70px">
-                    </a> 
+                        <i class="fas fa-bars text-white"></i>
+                    </button>
+                    <div 
+                        class="offcanvas offcanvas-start" 
+                        tabindex="-1" 
+                        id="offcanvasExample" 
+                        aria-labelledby="offcanvasExampleLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5 
+                                class="offcanvas-title" 
+                                id="offcanvasExampleLabel"
+                            >
+                                Menu
+                            </h5>
+                            <button 
+                                type="button" 
+                                class="btn-close text-reset" 
+                                data-bs-dismiss="offcanvas" 
+                                aria-label="Close"
+                            >
+                            </button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="dropdown mt-3">
+                                <ul>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="carangos-top-flex.html"
+                                        >
+                                            Página Inicial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="produtos-flex.html"
+                                        >
+                                            Produtos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="quem-somos-flex.html"
+                                        >
+                                            Quem Somos
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="fale-conosco-flex.html"
+                                        >
+                                            Fale Conosco
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            class="dropdown-item" 
+                                            href="https://exame.com/negocios/de-bmw-a-porsche-marcas-de-luxo-batem-recordes-de-venda-no-brasil-em-2021/" 
+                                            target="_blank" 
+                                        >
+                                            Saiba Mais
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <form class="d-flex flex-fill" action="produtos-flex.html">
                         <input
                             type="search"
@@ -35,310 +202,85 @@
                         >
                         <button type="button" class="btn">
                             <a href="produtos-flex.html">
-                                <i class="fas fa-search fa-lg"></i>
+                                <i class="fas fa-search text-white"></i>
                             </a>
                         </button>
                     </form>
-                    <div class="flex-fill text-end">
-                        <a class=" text-decoration-none" href="https://www.instagram.com/" target="_blank">
-                            <i class="fab fa-instagram fa-fw fa-2x text-primary"></i>
-                        </a>
-                        <a class=" text-decoration-none" href="https://www.facebook.com" target="_blank"> 
-                            <i class="fab fa-facebook-square fa-fw fa-2x text-primary"></i>
-                        </a>
-                        <a class=" text-decoration-none" href="login-flex.html">
-                            <i class="far fa-user-circle fa-fw fa-2x text-primary"></i> 
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav class="header-2 py-3 d-none d-sm-flex">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <ul class="list-unstyled list-inline m-0 d-none d-sm-flex">
-                        <li class="list-inline-item pe-3"> 
-                            <a 
-                                class="text-decoration-none link-light fw-bold" 
-                                href="carangos-top-flex.html"
-                            >
-                                Inicial
-                            </a>
-                        </li>
-                        <li class="list-inline-item px-3">
-                            <a 
-                                class="text-decoration-none link-light fw-bold" 
-                                href="produtos-flex.html"
-                            >
-                                Produtos
-                            </a>
-                        </li>
-                        <li class="list-inline-item px-3">
-                            <a 
-                                class="text-decoration-none link-light fw-bold" 
-                                href="quem-somos-flex.html"
-                            >
-                                Quem Somos
-                            </a>
-                        </li>
-                        <li class="list-inline-item px-3">
-                            <a 
-                                class="text-decoration-none link-light fw-bold" 
-                                href="fale-conosco-flex.html"
-                            >
-                                Fale Conosco 
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="d-none d-lg-flex">
-                        <a 
-                            class="text-decoration-none link-warning fw-bold"
-                            href="https://exame.com/negocios/de-bmw-a-porsche-marcas-de-luxo-batem-recordes-de-venda-no-brasil-em-2021/" 
-                            target="_blank" 
-                        >
-                        Veja mais em nossos parceiros
-                        </a>
-                    </div>
                     <div>
                         <a 
-                            class="text-decoration-none link-light" 
+                            class="text-decoration-none link-light mx-2" 
                             href="carrinho-de-compras-flex.html"
                         >
-                        <i class="fas fa-shopping-cart fa-lg"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                        </a>
+                        <a class=" text-decoration-none" href="login-flex.html">
+                            <i class="far fa-user-circle text-light"></i> 
                         </a>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <header class="d-flex d-sm-none">
-        <div class="header-2 p-2 container">
-            <div class="d-flex align-items-center">
-                <button 
-                    class="btn" 
-                    type="button" 
-                    data-bs-toggle="offcanvas" 
-                    data-bs-target="#offcanvasExample" 
-                    aria-controls="offcanvasExample"
-                >
-                    <i class="fas fa-bars text-white"></i>
-                </button>
-                <div 
-                    class="offcanvas offcanvas-start" 
-                    tabindex="-1" 
-                    id="offcanvasExample" 
-                    aria-labelledby="offcanvasExampleLabel"
-                >
-                    <div class="offcanvas-header">
-                        <h5 
-                            class="offcanvas-title" 
-                            id="offcanvasExampleLabel"
-                        >
-                            Menu
-                        </h5>
-                        <button 
-                            type="button" 
-                            class="btn-close text-reset" 
-                            data-bs-dismiss="offcanvas" 
-                            aria-label="Close"
-                        >
-                        </button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="dropdown mt-3">
-                            <ul>
-                                <li>
-                                    <a 
-                                        class="dropdown-item" 
-                                        href="carangos-top-flex.html"
-                                    >
-                                        Página Inicial
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        class="dropdown-item" 
-                                        href="produtos-flex.html"
-                                    >
-                                        Produtos
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        class="dropdown-item" 
-                                        href="quem-somos-flex.html"
-                                    >
-                                        Quem Somos
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        class="dropdown-item" 
-                                        href="fale-conosco-flex.html"
-                                    >
-                                        Fale Conosco
-                                    </a>
-                                </li>
-                                <li>
-                                    <a 
-                                        class="dropdown-item" 
-                                        href="https://exame.com/negocios/de-bmw-a-porsche-marcas-de-luxo-batem-recordes-de-venda-no-brasil-em-2021/" 
-                                        target="_blank" 
-                                    >
-                                        Saiba Mais
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <form class="d-flex flex-fill" action="produtos-flex.html">
-                    <input
-                        type="search"
-                        id="h_search-input" 
-                        class="src-input form-control" 
-                        placeholder="Busque aqui seu produto"
-                        aria-label="Recipient's username"
-                    >
-                    <button type="button" class="btn">
-                        <a href="produtos-flex.html">
-                            <i class="fas fa-search text-white"></i>
-                        </a>
-                    </button>
-                </form>
-                <div>
-                    <a 
-                        class="text-decoration-none link-light mx-2" 
-                        href="carrinho-de-compras-flex.html"
-                    >
-                    <i class="fas fa-shopping-cart"></i>
-                    </a>
-                    <a class=" text-decoration-none" href="login-flex.html">
-                        <i class="far fa-user-circle text-light"></i> 
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section>
-            <div class="container my-4">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                            <a href="carangos-top-flex.html">Página Inicial</a>
-                        </li>
-                        <li class="breadcrumb-item d-none d-sm-flex">
-                            <a href="produtos-flex.html">Produtos</a>
-                        </li>
-                        <li class="breadcrumb-item d-none d-md-flex">
-                            <a 
-                                href="produto-selecionado-flex.html"
+        </header>
+        <main>
+            <section>
+                <div class="container my-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a href="carangos-top-flex.html">Página Inicial</a>
+                            </li>
+                            <li class="breadcrumb-item d-none d-sm-flex">
+                                <a href="produtos-flex.html">Produtos</a>
+                            </li>
+                            <li class="breadcrumb-item d-none d-md-flex">
+                                <a 
+                                    href="produto-selecionado-flex.html"
+                                >
+                                    Produto Selecionado
+                                </a>
+                            </li>
+                            <li 
+                                class="breadcrumb-item active" 
+                                aria-current="page"
                             >
-                                Produto Selecionado
-                            </a>
-                        </li>
-                        <li 
-                            class="breadcrumb-item active" 
-                            aria-current="page"
-                        >
-                            Carrinho de Compras
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-        <section>
-
-            <div class="container">
-                <div class="table-responsive">
-                    <table class="table align-middle">
-                    <thead>
-                        <tr>
-                        <h2 class="text-center"> Carrinho de Compras</h2>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                        <tr>
-                        <td><div class="row">
-                            <div class="col-3 m-auto">
-                                <img class="w-100" src="bmw-x1.jpeg">
-                            </div></td>
-                        <td><div class="col-3 m-auto text-center fs-4">
+                                Carrinho de Compras
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+            <section>
+                <div class="container mt-5">
+                    <div class="row row-cols-1 row-cols-md-4">
+                        <div class="col m-auto">
+                            <img class="w-100" src="bmw-x1.jpeg">
+                        </div>
+                        <div class="col m-auto text-center fs-4">
                             <p>BMW X1</p>
                             <p>xDrive25i Sport</p>
                             <p>2021/2022</p>
-                        </div></td>
-                        <td class="align-top">
-                            <div class="col-3 m-auto text-center fs-5">
-                                <p>Quantidade</p>
-                                <div>
-                                    <input 
-                                        type="number" 
-                                        class="form-control text-center" 
-                                        id="inputnumber" 
-                                        name="quantidade" 
-                                        min="1" 
-                                        value="1"
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="col-3 m-auto text-end">
-                                <button 
-                                    class="btn btn-primary fs-5 mb-4" 
-                                    type="submit"
+                        </div>
+                        <div class="col m-auto text-center fs-5">
+                            <p>Quantidade</p>
+                            <div>
+                                <input 
+                                    type="number" 
+                                    class="form-control text-center" 
+                                    id="inputnumber" 
+                                    name="quantidade" 
+                                    min="1" 
+                                    value="1"
                                 >
-                                    Comprar
-                                </button>
                             </div>
-                        </td>
-                        </tr>
-                    </tbody>
-                    </table>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-3 m-auto">
-                        <img class="w-100" src="bmw-x1.jpeg">
-                    </div>
-                    <div class="col-3 m-auto text-center fs-4">
-                        <p>BMW X1</p>
-                        <p>xDrive25i Sport</p>
-                        <p>2021/2022</p>
-                    </div>
-                    <div class="col-3 m-auto text-center fs-5">
-                        <p>Quantidade</p>
-                        <div>
-                            <input 
-                                type="number" 
-                                class="form-control text-center" 
-                                id="inputnumber" 
-                                name="quantidade" 
-                                min="1" 
-                                value="1"
-                            >
+                        </div>
+                        <div class="col m-auto text-center fs-4">
+                            <div class="item__price">
+                                <span class="price-tag item__price-tag" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                                <span class="price-tag-symbol" itemprop="priceCurrency">R$</span>
+                                <span class="price-tag-fraction">450.000,00</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-3 m-auto text-end">
+                    <div class="text-end mt-5">
                         <button 
                             class="btn btn-primary fs-5 mb-4" 
                             type="submit"
@@ -347,121 +289,120 @@
                         </button>
                     </div>
                 </div>
-            </div>
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="text-center">
-                        <a 
-                            href="produtos-flex.html" 
-                            class="btn btn-info fs-5 mb-4"
-                        >
-                            Continuar a Compra
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="header-2">
-            <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a 
-                        class="text-decoration-none link-light" 
-                        href="carangos-top-flex.html"
-                    >
-                    <img src="logo.png" width="110px" height="60px">
-                    </a>
-                    <ul class="nav flex-column my-3">
-                        <li class="nav-item">
-                            <a 
-                                href="carangos-top-flex.html" 
-                                class="nav-link p-0 link-light text-decoration-none"
-                            >
-                                Página Inicial
-                            </a>
-                        </li>
-                        <li class="nav-item">
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="text-center">
                             <a 
                                 href="produtos-flex.html" 
-                                class="nav-link p-0 link-light text-decoration-none"
+                                class="btn btn-info fs-5 mb-4"
                             >
-                                Produtos
+                                Continuar a Compra
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                href="quem-somos-flex.html" 
-                                class="nav-link p-0 link-light text-decoration-none"
-                            >
-                                Quem Somos
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a 
-                                href="fale-conosco-flex.html" 
-                                class="nav-link p-0 link-light text-decoration-none"
-                            >
-                                Fale Conosco
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a 
-                                href="https://quatrorodas.abril.com.br/melhor-compra/melhor-compra-2021-carros-de-luxo-e-esportivos-ate-r-700-000/" 
-                                target="_blank" 
-                                class="nav-link p-0 link-light text-decoration-none"
-                            >
-                                Saiba mais
-                            </a>
-                        </li>
-                    </ul>
-                    <form class="d-none d-md-block">
-                        <h5 class="text-light text-center">Assine nossa página</h5>
-                        <p 
-                            class="text-light"
-                        >   
-                            Receba nossas novidades totalmente grátis
-                        </p>
-                        <div class="d-flex w-100 gap-2">
-                            <label 
-                                for="newsletter1" 
-                                class="visually-hidden"
-                            >
-                                Email
-                            </label>
-                            <input 
-                                id="newsletter1" 
-                                type="text"
-                                class="form-control" 
-                                placeholder="Seu Email"
-                            >
-                            <button 
-                                class="btn btn-info" 
-                                type="button"
-                            >   
-                                Assine
-                            </button>
                         </div>
-                    </form>
-                    <div>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fab fa-instagram fa-2x text-light"></i>
-                        </a>
-                        <a href="https://www.facebook.com" target="_blank"> 
-                            <i class="fab fa-facebook-square fa-2x text-light"></i>
-                        </a>
                     </div>
                 </div>
+            </section>
+        </main>
+        <footer>
+            <div class="header-2">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a 
+                            class="text-decoration-none link-light" 
+                            href="carangos-top-flex.html"
+                        >
+                        <img src="logo.png" width="110px" height="60px">
+                        </a>
+                        <ul class="nav flex-column my-3">
+                            <li class="nav-item">
+                                <a 
+                                    href="carangos-top-flex.html" 
+                                    class="nav-link p-0 link-light text-decoration-none"
+                                >
+                                    Página Inicial
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a 
+                                    href="produtos-flex.html" 
+                                    class="nav-link p-0 link-light text-decoration-none"
+                                >
+                                    Produtos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="quem-somos-flex.html" 
+                                    class="nav-link p-0 link-light text-decoration-none"
+                                >
+                                    Quem Somos
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a 
+                                    href="fale-conosco-flex.html" 
+                                    class="nav-link p-0 link-light text-decoration-none"
+                                >
+                                    Fale Conosco
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a 
+                                    href="https://quatrorodas.abril.com.br/melhor-compra/melhor-compra-2021-carros-de-luxo-e-esportivos-ate-r-700-000/" 
+                                    target="_blank" 
+                                    class="nav-link p-0 link-light text-decoration-none"
+                                >
+                                    Saiba mais
+                                </a>
+                            </li>
+                        </ul>
+                        <form class="d-none d-md-block">
+                            <h5 class="text-light text-center">Assine nossa página</h5>
+                            <p 
+                                class="text-light"
+                            >   
+                                Receba nossas novidades totalmente grátis
+                            </p>
+                            <div class="d-flex w-100 gap-2">
+                                <label 
+                                    for="newsletter1" 
+                                    class="visually-hidden"
+                                >
+                                    Email
+                                </label>
+                                <input 
+                                    id="newsletter1" 
+                                    type="text"
+                                    class="form-control" 
+                                    placeholder="Seu Email"
+                                >
+                                <button 
+                                    class="btn btn-info" 
+                                    type="button"
+                                >   
+                                    Assine
+                                </button>
+                            </div>
+                        </form>
+                        <div>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fab fa-instagram fa-2x text-light"></i>
+                            </a>
+                            <a href="https://www.facebook.com" target="_blank"> 
+                                <i class="fab fa-facebook-square fa-2x text-light"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <div class="header">
+                <p class="fs-6 text-center m-0 p-2">Produzido por Diego Cabral</p>
             </div>
-        <div class="header">
-            <p class="fs-6 text-center m-0 p-2">Produzido por Diego Cabral</p>
-        </div>
-    </footer>
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
-        crossorigin="anonymous"
-    >
-    </script>
-</body>
+        </footer>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" 
+            crossorigin="anonymous"
+        >
+        </script>
+    </body>
 </html>
